@@ -1,32 +1,27 @@
-public class BeerSong 
-{
-    public static void main (String [] arg) 
-    {
+public class BeerSong {
+    public static void main (String [] arg) {
         int beerNum = 99;
         String word = "bottles";
 
-        while (beerNum >0) {
-            
+        while(beerNum > 0) {
         
-        if (beerNum == 1)
-        {
-            word = "bottle"; //ie one bottle
-        }
+            if(beerNum == 1)
+            {
+                word = "bottle"; //ie one bottle
+            }
 
-        System.out.println(beerNum + " "+ word+ "of beer on the wall");
-        System.out.println("take one down.");
-        System.out.println("pass it around.");
-        beerNum = beerNum -1;
+            System.out.println(beerNum + " " + word + " of beer on the wall");
+            System.out.println("take one down.");
+            System.out.println("pass it around.");
+            beerNum = beerNum -1;
 
-        if (beerNum >0)
-        {
-            System.out.println(beerNum + " "+ word+ "of beer on the wall");
+            if(beerNum > 0) {
+                System.out.println(beerNum + " " + word + " of beer on the wall");
+            }
+            else {
+                System.out.println("no beer left :(");
+            }
+            System.out.println();
         }
-        else 
-        {
-            System.out.println("no beer left :(");
-        }
-        System.out.println();
-    }
     }
 }
